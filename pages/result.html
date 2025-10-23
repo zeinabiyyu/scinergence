@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil - Scinergence</title>
+</head>
+<body>
+    <div class="container">
+        <div class="result-grid">
+            <div class="card result-main slide-up">
+                <div class="card-header">
+                    <h2 class="card-title">Ringkasan AI</h2>
+                    <p class="card-description">Hasil ini bukan diagnosis. Jadikan panduan awal.</p>
+                </div>
+                <div class="card-content">
+                    <div class="confidence-bars">
+                        <div class="confidence-bar" data-condition="kecemasan">
+                            <div class="confidence-header">
+                                <span class="confidence-label">Kecemasan</span>
+                                <span class="confidence-value">72%</span>
+                            </div>
+                            <div class="confidence-track">
+                                <div class="confidence-fill" style="width: 72%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="confidence-bar" data-condition="depresi">
+                            <div class="confidence-header">
+                                <span class="confidence-label">Depresi</span>
+                                <span class="confidence-value">45%</span>
+                            </div>
+                            <div class="confidence-track">
+                                <div class="confidence-fill" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="confidence-bar" data-condition="stres">
+                            <div class="confidence-header">
+                                <span class="confidence-label">Stres</span>
+                                <span class="confidence-value">38%</span>
+                            </div>
+                            <div class="confidence-track">
+                                <div class="confidence-fill" style="width: 38%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <div class="form-label">Kalimat yang paling berkontribusi</div>
+                        <ul class="highlights-list">
+                            <li>"sulit tidur menjelang ujian"</li>
+                            <li>"mudah lelah dan cemas"</li>
+                            <li>"sulit berkonsentrasi saat bekerja"</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-secondary" data-action="assess-again">Isi ulang asesmen</button>
+                    <button class="btn btn-outline" data-action="learn">Baca artikel terkait</button>
+                    <button class="btn btn-primary" data-action="professionals">
+                        Konsultasi profesional <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="result-sidebar">
+                <div class="crisis-banner slide-up">
+                    <div class="crisis-banner-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div class="crisis-banner-title">Jika kamu berada dalam kondisi krisis atau berisiko melukai diri/atau orang lain, segera cari bantuan profesional.</div>
+                    </div>
+                    <ul class="crisis-banner-list">
+                        <li><a href="tel:119">Hotline Darurat (119)</a> — Panggilan cepat untuk keadaan gawat darurat.</li>
+                        <li><a href="https://www.kemkes.go.id/" target="_blank">Konseling Sehat Jiwa (Halo Kemenkes)</a> — Informasi dan dukungan layanan kesehatan jiwa.</li>
+                        <li><a href="https://pdskji.org/home" target="_blank">Layanan Psikologi Sehat Jiwa</a> — Dukungan psikologis online.</li>
+                    </ul>
+                </div>
+                
+                <div class="card slide-up">
+                    <div class="card-header">
+                        <h3 class="card-title">Kiat awal</h3>
+                        <p class="card-description">Langkah kecil yang bisa dicoba hari ini.</p>
+                    </div>
+                    <div class="card-content">
+                        <ul class="tips-list">
+                            <li>Atur jadwal tidur yang konsisten, batasi layar 1 jam sebelum tidur.</li>
+                            <li>Jurnal 5 menit: tulis 3 hal yang kamu syukuri hari ini.</li>
+                            <li>10 menit aktivitas fisik ringan untuk mengurangi ketegangan.</li>
+                            <li>Lakukan teknik pernapasan 4-7-8 (tarik 4 detik, tahan 7 detik, buang 8 detik).</li>
+                            <li>Batasi konsumsi berita negatif dan media sosial.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card slide-up">
+                    <div class="card-header">
+                        <h3 class="card-title">Langkah Selanjutnya</h3>
+                        <p class="card-description">Rekomendasi berdasarkan hasil asesmen.</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="next-steps">
+                            <div class="step-item">
+                                <i class="fas fa-book-medical" style="color: var(--primary);"></i>
+                                <span>Baca artikel tentang mengelola kecemasan</span>
+                            </div>
+                            <div class="step-item">
+                                <i class="fas fa-calendar-check" style="color: var(--primary);"></i>
+                                <span>Jadwalkan konsultasi dengan psikolog</span>
+                            </div>
+                            <div class="step-item">
+                                <i class="fas fa-mobile-alt" style="color: var(--primary);"></i>
+                                <span>Download aplikasi meditasi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .result-grid {
+            display: grid;
+            gap: 1.5rem;
+            padding: 2rem 0;
+        }
+
+        .result-main {
+            grid-column: 1 / -1;
+        }
+
+        .result-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .confidence-bar {
+            margin-bottom: 1.5rem;
+        }
+
+        .confidence-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .confidence-label {
+            font-weight: 500;
+        }
+
+        .confidence-value {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .confidence-track {
+            height: 8px;
+            background-color: var(--secondary);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background-color: var(--primary);
+            border-radius: 4px;
+            transition: width 1s ease-in-out;
+        }
+
+        .highlights-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+
+        .highlights-list li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .tips-list {
+            list-style-type: none;
+            padding-left: 0;
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+
+        .tips-list li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .tips-list li:before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .next-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            background-color: var(--accent);
+            border-radius: var(--radius);
+            font-size: 0.875rem;
+        }
+
+        .step-item i {
+            font-size: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .result-grid {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .result-sidebar {
+                order: -1;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Result page initialized');
+            
+            // Setup action buttons
+            const assessAgainBtn = document.querySelector('[data-action="assess-again"]');
+            const learnBtn = document.querySelector('[data-action="learn"]');
+            const professionalsBtn = document.querySelector('[data-action="professionals"]');
+            
+            if (assessAgainBtn) {
+                assessAgainBtn.addEventListener('click', function() {
+                    if (typeof navigateToPage === 'function') {
+                        navigateToPage('assess');
+                    }
+                });
+            }
+            
+            if (learnBtn) {
+                learnBtn.addEventListener('click', function() {
+                    if (typeof navigateToPage === 'function') {
+                        navigateToPage('learn');
+                    }
+                });
+            }
+            
+            if (professionalsBtn) {
+                professionalsBtn.addEventListener('click', function() {
+                    if (typeof navigateToPage === 'function') {
+                        navigateToPage('professionals');
+                    }
+                });
+            }
+
+            // Animate confidence bars
+            setTimeout(() => {
+                const confidenceFills = document.querySelectorAll('.confidence-fill');
+                confidenceFills.forEach(fill => {
+                    const currentWidth = fill.style.width;
+                    fill.style.width = '0%';
+                    setTimeout(() => {
+                        fill.style.width = currentWidth;
+                    }, 100);
+                });
+            }, 500);
+        });
+    </script>
+</body>
+</html>
